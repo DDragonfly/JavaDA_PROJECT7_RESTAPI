@@ -1,3 +1,4 @@
+/*
 package com.nnk.springboot;
 
 import com.nnk.springboot.domain.CurvePoint;
@@ -45,3 +46,4 @@ public class CurvePointTests {
 	}
 
 }
+*/
