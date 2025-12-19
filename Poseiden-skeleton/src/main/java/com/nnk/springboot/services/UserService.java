@@ -27,6 +27,11 @@ public class UserService {
                 .orElseThrow(() -> new IllegalArgumentException("Invalid user ID: " + id));
     }
 
+    /**
+     * Saves a user in database after hashing the raw password with BCrypt
+     * @param user user containing a raw password
+     * @return persisted user with hashed password
+     */
     public User save(User user) {
         user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
         return userRepository.save(user);

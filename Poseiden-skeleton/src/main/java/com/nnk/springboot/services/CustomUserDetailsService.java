@@ -22,6 +22,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 
     /**
      * Loads a user from database for Spring Security authentication.
+     * Converts application User entity into Spring Security UserDetails
      */
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
